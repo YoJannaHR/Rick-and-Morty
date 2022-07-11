@@ -61,12 +61,13 @@ button{
 
 .character-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 280px 1fr;
  
   
 }
 
 .card {
+  text-align: center;
   grid-column: 2/3;
   list-style: none;
   background-image: url(https://i.ibb.co/F7T6146/Hv4kZr.webp);
@@ -79,6 +80,7 @@ button{
   border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
   color: white;
   border: 3px solid rgb(37, 150, 190) ;
+  font-size: .8rem;
 }
 
 .card:hover {
