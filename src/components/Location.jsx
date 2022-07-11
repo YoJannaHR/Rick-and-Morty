@@ -5,12 +5,14 @@ import axios from "axios";
 const Location = ({ location, searchValue, searchLocation,setSearchValue }) => {
   return (
     <div >
+      <div className="search">
       <input
         type="text"
         value={searchValue}
         onChange={(e) => setSearchValue(e.target.value)}
       />
       <button onClick={searchLocation}>Search</button>
+      </div>
       <div className="head">
       <h2> Type: {location?.type}</h2>
       <h2> Name: {location?.name}</h2>

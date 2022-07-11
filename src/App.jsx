@@ -1,5 +1,5 @@
 import Location from "./components/Location";
-import Resident from "./components/Resident";
+import ResidentInfo from "./components/ResidentInfo";
 import { useEffect, useState } from "react";
 import "./App.css";
 import axios from "axios";
@@ -42,7 +42,7 @@ function App() {
       <div className="character-container">
       
         {location.residents?.map((resident) => (
-         <Resident  resident ={resident}  key ={resident}/>
+         <ResidentInfo  resident ={resident}  key ={resident}/>
         ))}
       
       </div>

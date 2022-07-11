@@ -3,7 +3,7 @@ import Axios  from 'axios';
 import axios from "axios";
 
 
-const Resident = ({resident}) => {
+const ResidentInfo = ({resident}) => {
 
 const [character, setCharacter] = useState({})
 
@@ -23,9 +23,9 @@ console.log(character)
         <div className="card">
 
                {/* <li>{resident}</li> */}
-               <h1>nombre {character?.name} </h1>
+               <h1>Nombre: {character?.name} </h1>
                <img className="avatar" src={character?.image} alt="" />
-               <h3>status: {character?.status} </h3>
+               <h3>Status: {character?.status} </h3>
                <h3>Lugar de Origen: {character.origin?.name} </h3>
                <h3>Cantidad Episodios: {character.episode?.length} </h3>
         </div>
@@ -33,4 +33,4 @@ console.log(character)
     );
 };
 
-export default Resident;
+export default ResidentInfo;
